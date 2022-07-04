@@ -116,7 +116,7 @@ const Game = () => {
         </Button>
 
         {/* due to the lack of backend, the back button can be quite slow after a while since going back here actually means calculating from 0 to the previous gen and then displaying that. For the time being it's going to disappear after 250 gens. */}
-        {counter < 250 && (
+        {counter < 25 && (
           <Button onClick={previousGenerationHandler}>Back</Button>
         )}
         <Button onClick={nextGenerationHandler}>Next</Button>
